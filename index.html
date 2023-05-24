@@ -10,9 +10,9 @@
   </head>
   <body>
     <div class="max-w-screen-lg mx-auto p-10 text-slate-800">
-      <div class="grid grid-cols-2 gap-10">
+      <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-10">
         <img
-          class="mt-10"
+          class="mt-10 mx-auto md:w-full sm:w-1/4 w-[150px]"
           src="https://avatars.githubusercontent.com/u/122506206"
           alt="logo"
         />
@@ -45,7 +45,7 @@
       </div>
 
       <div
-        class="grid grid-cols-4 gap-20 mt-20"
+        class="grid md:grid-cols-4 sm:grid-cols-2 gap-20 mt-20"
         v-cloak
         v-scope="{ items:[
         { name: 'Team & outputs', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:share-variant-outline.svg?color=%23999999' },
