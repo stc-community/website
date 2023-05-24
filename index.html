@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STC Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+  </head>
+  <body>
+    <div class="max-w-screen-lg mx-auto p-10 text-slate-800">
+      <div class="grid grid-cols-2 gap-10">
+        <img
+          class="mt-10"
+          src="https://avatars.githubusercontent.com/u/122506206"
+          alt="logo"
+        />
+        <div class="mt-16">
+          <p class="text-2xl font-mono">
+            <span class="font-bold">The STC Council</span> of the weelink web3
+            foundation, let us build global DPaaS open source infrastructure
+            together.
+          </p>
+          <p class="text-sm mt-10">
+            STC (Security and Trustee Council) is based on the Homo sapiens
+            cloud project, responsible for the daily coordination of the global
+            WeeLink partners' DPaaS node operation and maintenance, security
+            protection, infrastructure upgrades, operational policy adjustments,
+            and the process of adding new cloud nodes to the Weelink blockchain.
+          </p>
+          <div class="mt-10 flex justify-between">
+            <button
+              class="bg-rose-700 text-white py-2 px-10 hover:bg-orange-500"
+            >
+              Find us on GitHub
+            </button>
+            <button
+              class="bg-orange-500 text-white py-2 px-10 hover:bg-rose-700"
+            >
+              Join to ipc.space
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-4 gap-20 mt-20"
+        v-cloak
+        v-scope="{ items:[
+        { name: 'Team & outputs', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:share-variant-outline.svg?color=%23999999' },
+        { name: 'Roadmap', desc: 'We work in the open! Our roadmap lists upcoming milestones.', href: '/', icon:'https://api.iconify.design/mdi:clipboard-list-outline.svg?color=%23999999' },
+        { name: 'Events', desc: 'We\'re building a research community through our public events.', href: '/', icon:'https://api.iconify.design/mdi:calendar-month.svg?color=%23999999' },
+        { name: 'Sitreps', desc: 'Read our weekly updates.', href: '/', icon:'https://api.iconify.design/mdi:refresh-auto.svg?color=%23999999' },
+        { name: 'Discussions', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:account-group.svg?color=%23999999' },
+        { name: 'Twitter', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:twitter.svg?color=%23999999' },
+        { name: 'YouTube', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:youtube.svg?color=%23999999' },
+        { name: 'Slack', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:slack.svg?color=%23999999' },
+        ] 
+    }"
+      >
+        <div class="text-center" v-for="i in items">
+          <img :src="i.icon" :alt="i.name" class="w-20 mx-auto mb-8" />
+          <a href="" class="text-2xl text-rose-700 text-center">{{i.name}}</a>
+          <p class="text-left text-sm mt-5">{{i.desc}}</p>
+        </div>
+      </div>
+
+      <p class="text-center text-xs text-slate-600 mt-20">© STC Community</p>
+    </div>
+  </body>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</html>
