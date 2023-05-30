@@ -30,11 +30,13 @@
             and the process of adding new cloud nodes to the Weelink blockchain.
           </p>
           <div class="mt-10 flex justify-between">
-            <button
-              class="bg-rose-700 text-white py-2 px-10 hover:bg-orange-500"
+            <a
+              href="https://github.com/stc-community"
+              target="_blank"
+              class="inline-block bg-rose-700 text-white py-2 px-10 hover:bg-orange-500"
             >
               Find us on GitHub
-            </button>
+            </a>
             <button
               class="bg-orange-500 text-white py-2 px-10 hover:bg-rose-700"
             >
@@ -53,15 +55,20 @@
         { name: 'Events', desc: 'We\'re building a research community through our public events.', href: '/', icon:'https://api.iconify.design/mdi:calendar-month.svg?color=%23999999' },
         { name: 'Sitreps', desc: 'Read our weekly updates.', href: '/', icon:'https://api.iconify.design/mdi:refresh-auto.svg?color=%23999999' },
         { name: 'Discussions', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:account-group.svg?color=%23999999' },
-        { name: 'Twitter', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:twitter.svg?color=%23999999' },
-        { name: 'YouTube', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:youtube.svg?color=%23999999' },
+        { name: 'Twitter', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: 'https://twitter.com/stc_community', icon:'https://api.iconify.design/mdi:twitter.svg?color=%23999999' },
+        { name: 'YouTube', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: 'https://www.youtube.com/channel/UC8b_E4b-bOBonPZ7EKEFF8Q', icon:'https://api.iconify.design/mdi:youtube.svg?color=%23999999' },
         { name: 'Slack', desc: 'Our team frequently publishes talks, papers, and blog posts.', href: '/', icon:'https://api.iconify.design/mdi:slack.svg?color=%23999999' },
         ] 
     }"
       >
         <div class="text-center" v-for="i in items">
           <img :src="i.icon" :alt="i.name" class="w-20 mx-auto mb-8" />
-          <a href="" class="text-2xl text-rose-700 text-center">{{i.name}}</a>
+          <a
+            :href="i.href"
+            target="_blank"
+            class="text-2xl text-rose-700 text-center"
+            >{{i.name}}</a
+          >
           <p class="text-left text-sm mt-5">{{i.desc}}</p>
         </div>
       </div>
