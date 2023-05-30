@@ -11,11 +11,13 @@
   <body>
     <div class="max-w-screen-lg mx-auto p-10 text-slate-800">
       <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-10">
-        <img
-          class="mt-10 mx-auto md:w-full sm:w-1/4 w-[150px]"
-          src="https://avatars.githubusercontent.com/u/122506206"
-          alt="logo"
-        />
+        <div class="mt-6 p-8 mx-auto md:w-full sm:w-1/4 w-[150px]">
+          <img
+            class="rounded-lg"
+            src="https://avatars.githubusercontent.com/u/122506206"
+            alt="logo"
+          />
+        </div>
         <div class="mt-16">
           <p class="text-2xl font-mono">
             <span class="font-bold">The STC Council</span> of the weelink web3
@@ -33,12 +35,12 @@
             <a
               href="https://github.com/stc-community"
               target="_blank"
-              class="inline-block bg-rose-700 text-white py-2 px-10 hover:bg-orange-500"
+              class="inline-block bg-sky-700 text-white py-2 px-10 hover:bg-orange-500"
             >
               Find us on GitHub
             </a>
             <button
-              class="bg-orange-500 text-white py-2 px-10 hover:bg-rose-700"
+              class="bg-orange-500 text-white py-2 px-10 hover:bg-sky-700"
             >
               Join to ipc.space
             </button>
@@ -66,7 +68,7 @@
           <a
             :href="i.href"
             target="_blank"
-            class="text-2xl text-rose-700 text-center"
+            class="text-2xl text-sky-700 text-center"
             >{{i.name}}</a
           >
           <p class="text-left text-sm mt-5">{{i.desc}}</p>
